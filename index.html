@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <style>
+        div {
+            border: 1px solid blue;
+            padding: 3px;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid red;
+            height: 100vh;
+        }
+
+        .add-item {
+            display: flex;
+            background: lightblue;
+        }
+
+        .add-item input {
+            flex-grow: 1;
+        }
+
+        .todo {
+            flex-grow: 1;
+            background: lightcoral;
+        }
+
+        .done {
+            flex-grow: 1;
+            background: lightgrey;
+        }
+        .item{
+            display: flex;
+        }
+        .item input{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="add-item">
+        <input type="text">
+        <button>add</button>
+    </div>
+
+    <div class="todo">
+        <div class="item">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, ex. Cumque molestias minus eius iusto numquam 
+            <input type="checkbox" true>
+        </div>
+
+    </div>
+
+    <div class="done">
+        <div class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ex. Cumque molestias minus eius iusto numquam 
+            <input type="checkbox">
+        </div>
+    </div>
+
+</body>
+
+</html>
